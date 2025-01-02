@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buliding Componenets& layout</title>
+    <script src="https://kit.fontawesome.com/16c702518b.js" crossorigin="anonymous"></script>
+    <style>
+        body{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .header{
+            width: 100%;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            border: 1px solid whitesmoke;
+        }
+        .header>div{
+            width: 40%;
+
+        }
+        .header>div>h1>span{
+            color: #720e9e;
+        }
+        .contents{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            border: 1px solid whitesmoke;
+        }
+        .contents>ul{
+            list-style: none;
+        }
+        .contents>button{
+            padding: 10px 14px;
+            background-color: rgb(210, 206, 206);
+            border: none;
+            color: #720e9e;
+            font-size: 15px;
+            font-weight: bold;
+            border-radius: 5px;
+        }
+        .contents>button:hover{
+            background-color: #720e9e;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div id="root"></div>    
+</body>
+</html>
+<script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+<script type="text/babel" src="script.js"></script>
