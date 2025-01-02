@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Change Webchange title using vanilla JS</h1>
+    <button id="changeTitle">Change Title</button>
+</body>
+</html>
+<script>
+    const changeTitleBtn = document.getElementById("changeTitle");
+    changeTitleBtn.addEventListener('click', ()=>{
+        let count=0;
+        const newTitle = `New Title -${count++}`;
+        document.title = newTitle;
+    })
+</script>
