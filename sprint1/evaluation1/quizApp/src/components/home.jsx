@@ -1,11 +1,24 @@
 import { useState } from "react";
 import { Button } from "@chakra-ui/react";
+import { useNavigate } from "react-router-dom";
 
 const Home = ()=>{
     const [name, setName] = useState("");
     const [category , setCategory] = useState("");
     const [difficulty, setDifficulty] = useState("easy");
     const [question , setQuestion] = useState(5);
+    const navigate = useNavigate()
+
+
+
+    const handleStart = (e)=>{
+        e.preventDefault();
+        localStorage.setItem("user", JSON.stringify({
+            name, category, difficulty, question
+        }));
+
+        navigate("/quiz")
+    }
    
 
     return (
