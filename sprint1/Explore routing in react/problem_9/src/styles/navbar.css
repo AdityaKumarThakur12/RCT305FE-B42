@@ -1,0 +1,9 @@
+.navbar{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: linear-gradient(rgba(10, 227, 213, 0.734), skyblue);
+    padding: 20px;
+    font-size: 20px;
+}
