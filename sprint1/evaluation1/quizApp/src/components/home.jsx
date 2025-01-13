@@ -6,7 +6,7 @@ const Home = ()=>{
     const [name, setName] = useState("");
     const [category , setCategory] = useState("");
     const [difficulty, setDifficulty] = useState("easy");
-    const [question , setQuestion] = useState(5);
+    const [questions , setQuestions] = useState(5);
     const navigate = useNavigate()
 
 
@@ -14,7 +14,7 @@ const Home = ()=>{
     const handleStart = (e)=>{
         e.preventDefault();
         localStorage.setItem("user", JSON.stringify({
-            name, category, difficulty, question
+            name, category, difficulty, questions
         }));
 
         navigate("/quiz")
@@ -38,7 +38,7 @@ const Home = ()=>{
                 <option value="medium">Medium</option>
                 <option value="hard">hard</option>
             </select>
-            <input type="number" value={question} placeholder="Enter the number of question" onChange={(e)=> setQuestion(e.target.value)} min={1} max={50} />
+            <input type="number" value={questions} placeholder="Enter the number of question" onChange={(e)=> setQuestions(e.target.value)} min={1} max={50} />
             <Button onClick={handleStart}>Start Quiz</Button>
         </div>
         </>
