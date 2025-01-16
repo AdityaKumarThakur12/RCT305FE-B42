@@ -1,0 +1,41 @@
+.otp-area{
+  width: 30%;
+  background: linear-gradient(rgb(154, 203, 223), yellow);
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+
+.otp{
+  width: 70%;
+  margin: 20px auto;
+  display: flex;
+  gap: 10px;
+}
+.otp>input{
+  width: 50px;
+  padding: 10px;
+  outline: none;
+  text-align: center;
+  background-color: white;
+  
+}
+.otp>input:focus{
+  border: 3px solid black;
+}
+.otp-area>button{
+  background-color: red;
+  color: white;
+  font-family: sans-serif;
+  font-weight: bold;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 8px;
+}
+.otp-area>button:hover{
+  background-color: rgb(230, 158, 51);
+  color: black;
+}
